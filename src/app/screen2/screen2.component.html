@@ -1,0 +1,16 @@
+<form>
+    <div class ="card">
+        <div class="container">
+            <img src="assets/verify.jpg"  style="width:280px;height:280px;">
+            <h1>Please verify Mobile No</h1>
+            <p>An OTP has been sent to your mobile no</p>
+            <div>
+                <span>{{phnent}}</span>
+            </div><br />
+            <ng-otp-input #otp  [config]="{length:4}"></ng-otp-input> <br /><br />
+            
+            <button type="submit" class="btn" (click)="checkOTP(otp.otpForm.value)">Verify </button>
+
+        </div>
+    </div>
+</form>

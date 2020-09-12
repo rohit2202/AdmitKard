@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: 'Muli', 'Baloo Da 2', 'Montserrat', sans-serif;
+  }
+  body {
+   
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  .card {
+    background-color: rgb(248, 242, 242);
+    align-content: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .container {
+    padding: 16px;
+    width: 150px;
+    margin: auto;
+  }

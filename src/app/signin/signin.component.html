@@ -1,0 +1,15 @@
+<form (ngSubmit)="signin()">
+<div class="card">
+    <div class="container">
+<img src="assets/logo.png" style="width:280px;height:100px;">
+<h1>Welcome Back</h1> 
+<p><b>Sign In to your account</b></p> 
+<input type="number" class="form-control" required ng2TelInput maxlength="10" minlength="10" name="name" #phn (keyup)="check(phn.value)"/><br />
+<div *ngIf="lengthcheck" style="background-color: lightcoral;">
+    <h5 style="color: red">Enter valid 10 digit mobile number</h5>
+</div>
+<p>We will send you a one time sms. Charges may apply.</p>
+<button type="submit" class="btn">Sign In with OTP</button>
+</div>
+</div>
+</form>
